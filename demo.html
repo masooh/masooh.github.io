@@ -1,5 +1,17 @@
-<html>
+<html lang="de">
+<script>
+    setTimeout(function () {
+        let iframe = document.createElement("iframe");
+        iframe.setAttribute("id", "gebish")
+        iframe.setAttribute("src", "https://gebish.org/")
+        iframe.setAttribute("height", "600")
+        iframe.setAttribute("width", "1200")
+
+        let anchor = document.getElementById("placeholder");
+        anchor.parentNode.replaceChild(iframe, anchor)
+    }, 2000)
+</script>
 <body>
-<iframe id="gebish" src="https://gebish.org/" height="600" width="1200"></iframe>
+<div id="placeholder">Hier kommt der Iframe</div>
 </body>
 </html>
